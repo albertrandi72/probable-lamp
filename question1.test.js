@@ -32,8 +32,10 @@ describe("check divisible by 15", () => {
 
 describe("checkNumber should result", () => {
   test("should return fish, bash and fish bash", () => {
-    expect(checkNumber([3, 5, 15])).toContain("fish");
-    expect(checkNumber([3, 5, 15])).toContain("bash");
-    expect(checkNumber([3, 5, 15])).toContain("fish bash");
+    expect(checkNumber([3, 5, 15])).toStrictEqual([
+      "fish",
+      "bash",
+      "fish bash",
+    ]);
   });
 });
